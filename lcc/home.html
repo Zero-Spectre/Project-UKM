@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCC - LP3i Computer Club</title>
+
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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"
+    type="image/x-icon">
+  <link rel="stylesheet" href="/lcc/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+
+<body id="top">
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="/lcc/assets/images/logo.png" alt="NAFT logo">
+      </a>
+      <div class="header-right">
+        <div class="header-nav-wrapper">
+          <button class="navbar-toggle-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li>
+                <a href="/lcc/index.html" class="navbar-link active">Home</a>
+              </li>
+              <li>
+                <a href="/lcc/about.html" class="navbar-link">About</a>
+              </li>
+              <li>
+                <a href="/lcc/team.html" class="navbar-link">Team</a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h2 hero-title animated ">Welcome to <br><span class="h1">LP3i
+                Computer
+              </span>
+              <font class="h1">
+                Club | <font class="h2">by <span class="xs">Mi</span>22</font>
+              </font>
+            </h1>
+
+            <p class="hero-text">
+              LCC adalah salah Satu UKM di Politeknik LP3i yang membahas seputar komputer dengan lebih detail.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary">Our Creation</button>
+
+              <button class="btn btn-primary">Join Now</button>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner" id="heros">
+            <!-- <img alt="" > -->
+          </figure>
+
+        </div>
+      </section>
+      <center>
+        <div style="width: 90%;">
+          <hr style="border:1px solid var(--green-woz);">
+        </div>
+      </center>
+      <div id="particles-js">
+        <canvas class="particles-js-canvas-el" style="width: 100%; height: auto;">
+        </canvas>
+      </div>
+      <section class="about">
+        <div class="container">
+
+          <h2 class="h2 about-title">Topik Yang Akan dibahas</h2>
+
+          <ol class="about-list">
+            <script>
+              const pembahasan = ['Web Design & Blog', 'Design Graphic', 'Social Engineering', 'Artificial Intelegence']
+              const ikon = ['fa-solid fa-code', 'fa-solid fa-palette', 'fa-solid fa-share-nodes', 'fa-solid fa-brain']
+              let x = 0;
+              while (x < pembahasan.length) {
+                document.write(`<li class="about-item">
+              <div class="about-card">
+                <div class="card-number">0`+ (x + 1) + `</div>
+                <div class="card-icon">
+                  <i style="font-size:30px;color:var(--green-woz)" class="`+ ikon[x] + `"></i>
+                </div>
+                <h3 class="h3 about-card-title">`+ pembahasan[x] + `</h3>
+                <p class="about-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet accusantium placeat, aliquid reiciendis impedit.
+                </p>
+              </div>
+            </li>`)
+                x++
+              }
+            </script>
+
+
+          </ol>
+
+        </div>
+      </section>
+      <section class="photo">
+        <div class="container">
+          <h2 class="h2 photo-title">Foto Foto <span>LCC</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </h2>
+          <div class="photo-flex">
+            <img src="https://nitromks.ac.id/wp-content/uploads/2020/09/DSC07065-1024x682.jpg" alt="">
+            <img src="https://sman12berau.sch.id/wp-content/uploads/2020/07/IMG20220808094436-scaled.jpg" alt="">
+            <img src="https://www.sman12kabtangerang.sch.id/wp-content/uploads/2020/05/labkomp-sman12-2020-1024x480.jpg"
+              alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="top-seller">
+        <div class="container">
+
+          <h2 class="h2 top-seller-title">
+            Pengurus <span>LCC</span> 2023
+            <ion-icon name="chevron-down"></ion-icon>
+          </h2>
+
+          <ol class="top-seller-list" id="mentor">
+
+            <script>
+              const getwadah = document.getElementById('mentor');
+
+              const nama = ['Raihan R.', 'Litho A.', 'Fitri A.', 'Arika L.', 'Fadil F', 'Muhammad V.', 'Lintang S.', 'Al M.']
+              const jabatan = ['Leader', 'Co Leader', 'Secretary', 'Mentor', 'Mentor ', 'Mentor ', 'Mentor', 'Mentor']
+              const skill = ['Backend Programmer', 'Backend Programmer', 'Web Designer', 'Web Designer', 'Frontend Programmer', 'Frontend Programmer', 'Hacker Tools', 'Custom Roamer']
+              let i = 0;
+              while (i < nama.length) {
+                document.write(`<li class="top-seller-item">
+              <a href="#" class="top-seller-card">
+                <div class="card-number">`+ jabatan[i] + `</div>
+                <figure class="card-avatar">
+                  <img src="https://www.sideshow.com/storage/product-images/911242/ultimate-article-ultraman_ultraman_square.jpg" alt="Brodband">
+                  <!-- <div class="avatar-badge">
+                    <i class="fa-brands fa-html5"></i>
+                  </div> -->
+                </figure>
+                <div class="card-content">
+                  <h3 class="h5 card-title">`+ nama[i] + `</h3>
+                  <data>`+ skill[i] + `</data>
+                </div>
+              </a>
+            </li>`);
+                i++;
+              }
+            </script>
+          </ol>
+
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="NAFT logo">
+          </a>
+
+          <p class="footer-brand-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsa sint quod aliquid officia
+            architecto vero eum odit, dicta quo doloremque culpa delectus veritatis.
+          </p>
+
+          <h3 class="h4 social-title">Join the community</h3>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://github.com/zero-spectre" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://ixcode.netlify.app" class="social-link">
+                <ion-icon name="globe-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Other Website</h3>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Lp3i Pekanbaru</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">Siakad</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">LMS</a>
+            </li>
+
+            <li class="footer-item">
+              <a href="#" class="footer-link">KRS</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <h3 class="h3 footer-item-title">Other UKM</h3>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link ">LMBC</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">LMC</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">LAC</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">Seal</a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">UKMI</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+</body>
+
+</html>
