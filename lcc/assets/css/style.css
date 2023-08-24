@@ -12,7 +12,8 @@
   --davys-gray: hsl(0, 0%, 33%);
   --field-drab: hsl(47, 98%, 22%);
   --red-crayola: hsl(356, 73%, 58%);
-  --green-woz: rgb(0, 212, 0);
+  --green-woz: #09f469;
+  /* --green-woz: rgb(0, 212, 0); */
   --quick-silver: hsl(0, 0%, 63%);
   --sonic-silver: hsl(0, 0%, 44%);
   --eerie-black-1: hsl(0, 0%, 15%);
@@ -996,6 +997,11 @@ header .container {
   .photo-flex>img:nth-child(1) {
     margin-left: 3%;
   }
+
+  .partnership {
+    margin-top: 100px;
+
+  }
 }
 
 
@@ -1463,3 +1469,65 @@ header .container {
   background-size: cover;
   background-position: 50% 50%;
 }
+
+.partnership {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.partner-btn {
+  margin-top: -50px;
+  margin-bottom: 25px;
+  padding: 10px;
+  border: 1px solid var(--green-woz);
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+
+.partner-btn:nth-child(1):hover {
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+.partner-btn:nth-child(2):hover {
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+}
+
+.partner-btn:nth-child(3):hover {
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+}
+
+.partner-btn:nth-child(4):hover {
+  border: 1px solid palevioletred;
+  background-color: palevioletred;
+  color: black;
+}
+
+.partner-btn:nth-child(5):hover {
+  border: 1px solid purple;
+  background-color: purple;
+  color: white;
+}
+
+.partner-btn:nth-child(6):hover {
+  border: 1px solid gray;
+  background-color: gray;
+  color: black;
+}
+
+/* 
+.partnership2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+} */
