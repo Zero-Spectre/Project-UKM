@@ -15,3 +15,22 @@ Seal = Litho & Murti
 - Design Admin Panel
 - Fitur Pendaftaran Anggota UKM dan View Laporan(via sheet)
 
+#Struktur Web 
+- Navbar
+  - Home
+  - About
+    - visi misi
+    - Logo dan deskripsi
+  - Materi (optional)
+  - Gallery
+  - Contact Us
+- Hero (pilih 1 style)
+  - Hero Slider/Carousel
+  - Single Hero
+  - Parallax
+- Tombol UKM Lain
+- Kata Sambutan dan perkenalan UKM
+- Foto Dokumentasi
+- Team/anggota UKM
+- Ads/iklan -> ajakan bergabung UKM
+- Footer
