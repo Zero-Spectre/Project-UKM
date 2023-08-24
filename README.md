@@ -1,7 +1,7 @@
 #### Project-UKM
 project untuk website UKM di LP3i Pekanbaru
 
-# pembagian tugas
+## pembagian tugas
 LCC = Raihan
 LAC = Arika
 LMC = Fira & Lintang
@@ -15,7 +15,7 @@ Seal = Litho & Murti
 - Design Admin Panel
 - Fitur Pendaftaran Anggota UKM dan View Laporan(via sheet)
 
-# Struktur Web 
+## Struktur Web 
 - Navbar
   - Home
   - About
