@@ -21,7 +21,9 @@ project untuk website UKM di LP3i Pekanbaru
   - About
     - visi misi
     - Logo dan deskripsi
-  - Materi (optional)
+  - Pertemuan
+    - Materi
+    - Absensi
   - Gallery
   - Contact Us
 - Hero (pilih 1 style)
