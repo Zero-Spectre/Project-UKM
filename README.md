@@ -1,7 +1,7 @@
 #### Project-UKM
 project untuk website UKM di LP3i Pekanbaru
 
-## pembagian tugas ( WEBSITE WAJIB RESPONDSIVE)
+## pembagian tugas ( WEBSITE WAJIB RESPONDSIVE! )
 - LCC = Raihan
 - LAC = Arika
 - LMC = Fira & Lintang
