@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukmi</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/Foto/logo-removebg-preview.png" alt="Logo" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Selengkapnya
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Agenda.html">Agenda</a></li>
+                            <li><a class="dropdown-item" href="./Galeri.html">Galeri</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">Login epep</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- welcome -->
+    <div class="container mt-5">
+        <div style="text-align: center; margin-top: 175px; font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Phudu', cursive; color: white;">
+            <h1>WELCOME TO UKMI</h1>
+            <p>This is a responsive navbar example with a logo built with Bootstrap 5.</p>
+            <a href="./profile.html" class="btn btn-lg btn-light fw-bold border-black bg-black"
+                style="color: white;">Learn more</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script to mark the active menu item
+        document.addEventListener("DOMContentLoaded", function () {
+            const navItems = document.querySelectorAll(".nav-item");
+
+            navItems.forEach(function (item) {
+                item.addEventListener("click", function () {
+                    navItems.forEach(function (navItem) {
+                        navItem.querySelector(".nav-link").classList.remove("active");
+                    });
+                    this.querySelector(".nav-link").classList.add("active");
+                });
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(13, 13, 94), rgb(194, 197, 211));
+        }
+    </style>
+</body>
+
+</html>
