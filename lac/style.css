@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: #f9f69e;
+    min-height: 100vh;
+}
+
+
+/* Style for the loader */
+.loader {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Style for the loading text */
+.loader p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header .lac {
+    color: rgb(171, 186, 59);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#header nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#header nav ul li {
+    list-style-type: none;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #47461f;
+    border-radius: 20px;
+}
+
+#header nav ul li a:hover,
+#header nav ul li a.active {
+    background: bisque;
+}
+
+section {
+    /* position: relative; */
+    width: 100%;
+    height: 900px;
+    /* display: flex; */
+}
+
+section #txt {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 490px;
+}
+
+section #txtin {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.container{
+    width: 100%;
+    height: 500px;
+    background: #ffffff;
+    display: flex;
+}
+
+.col1, .col2{
+    width: 50%;
+}
+
+.col1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.col2{
+    padding-top: 100px;
+}
+
+.col2  p{
+   padding-right: 100px;
+   text-align: justify;
+}
+
+.col2 button{
+    background: #7800ad;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+}
+
+.col2 button a{
+    text-decoration: none;
+    text-decoration-color: #ccc;
+    color: #fff;
+}
+
+  .container-2{
+    display: flex;
+}
+
+.judul{
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+}
+.card {
+    width: 280px;
+    height: 412px;
+    margin: 100px auto 0;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+  } 
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute; 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url(image/someone.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.front h2 {
+    font-weight: 500;
+}
+
+.front p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.front button {
+    width: 120px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+}
+
+ .back {
+    background: white;
+    color: #333;
+    padding: 20px 40px;
+    transform: rotateY(180deg);
+}
+
+
+.back h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+
+.back h1 span {
+    font-weight: 400;
+}
+
+.back p {
+    font-size: 14px;
+}
+
+.back img {
+    width: 120px;
+}
+ .row  {
+    display: flex;
+ }
+.back button {
+    background: #7800ad;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    box-shadow: 0 8px 10px rgba(120, 0, 173, 0.3);
+}
+
+.back a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.back a img {
+    width: 50%;
+}
+.Sign-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.Sign-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.Sign-box .user-box {
+    position: relative;
+}
+
+.Sign-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.Sign-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.Sign-box .user-box input:focus~label,
+.Sign-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #f68e44;
+    font-size: 12px;
+}
+
+.Sign-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #b79726;
+    font-size: 16px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.Sign-box a:hover {
+    background: #f49803;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f4c803,
+        0 0 25px #bd9d0b,
+        0 0 50px #f4e403,
+        0 0 100px #d5cf1e;
+}
+
+.Sign-box a span {
+    position: absolute;
+    display: block;
+}
+
+.Sign-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f4c003);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.Sign-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f4bc03);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.Sign-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f4dc03);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.Sign-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f4b003);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+#klik {
+    color: #fff;
+}
+
+.asset {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-left: 400px;
+    padding-top: 100px;
+    color: #fff;
+    width: 700px;
+    font-size: 25px;
+}
+
+.welcome h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 80px;
+    stroke: #d5cf1e 2px;
+    text-shadow:3px 0 0 rgb(184, 221, 169),0 3px 0 rgb(184, 221, 169),-3px 0 0 rgb(184, 221, 169),0 -3px 0 rgb(184, 221, 169)
+}
+details{
+    padding-left: 40px;
+}
+
+footer {
+    background-color: transparent;
+    color: rgb(122, 119, 84);
+    text-align: center;
+    padding: 10px;
+}
+
+.container-3{
+    margin: 10%;
+    border-radius: 20px;
+    border: 1px solid #000;
+    width: 1000px;
+    height: 300px;
+    justify-content: center;
+}
+
+.card-1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card-1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card-1 button:hover {
+    opacity: 0.7;
+  }

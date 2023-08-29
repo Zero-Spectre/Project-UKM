@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="Sign-box">
+        <h2>Sign Up</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" onchange="upperchange()"  onkeydown="colorkeydown()" id="nama" required="">
+            <label>Full name</label>
+          </div>
+          <div class="user-box">
+            <input type="date"  onfocus="coloronfokus(this)" name="" required="">
+            <label>Birth Date</label>
+          </div>
+          <div class="user-box">
+            <input type="text" onkeyup="lowerkeyup()" onfocus="coloronfokus(this)" id="usernama" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" onfocus="coloronfokus(this)" name="" required="">
+            <label>Make Password</label>
+          </div>
+
+          <a href="#" onclick="sub1()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+          <a href="#" onclick="login1()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+          </a>
+          
+        </form>
+        <p id="klik" onclick="klik()">please click this</p> 
+</body>
+</html>
