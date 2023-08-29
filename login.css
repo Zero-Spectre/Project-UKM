@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --putih: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+}
+
+.login-card {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://storage-asset.msi.com/global/picture/wallpaper/wallpaper_1688355284d56cbf4e553339e14717a9dded02e19f.jpeg');
+    background-size: cover;
+}
+
+.card {
+    width: 27.5%;
+    min-height: 100px;
+    height: auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    backdrop-filter: blur(2.5px);
+}
+
+.card>h1 {
+    color: var(--putih);
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-login {
+    margin: 15px;
+}
+
+.form-login>label {
+    color: var(--putih);
+    margin-top: 10px;
+    margin-left: 15px;
+    display: block;
+}
+
+.form-login>label:nth-child(1) {
+    margin-top: 25px;
+
+}
+
+.form-login>input {
+    width: 93%;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+}
+
+.form-login>button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background: rgb(0, 153, 255);
+    border: 1px solid rgb(0, 153, 255);
+    outline: none;
+    color: var(--putih);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.form-login>button:is(:hover) {
+    transition: 0.25s;
+    background: transparent;
+    border: 1px solid rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 75%;
+    }
+}
